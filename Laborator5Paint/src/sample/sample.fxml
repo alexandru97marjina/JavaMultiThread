@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" text="Laborator5" textFill="#0b40ab" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <content>
+      <AnchorPane fx:id="id_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #835eff;">
+         <children>
+            <Text fx:id="tx_FCIM" fill="#1e2680" layoutX="181.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FCIM" wrappingWidth="202.13671875">
+               <font>
+                  <Font size="71.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="0.0" specularConstant="1.74" specularExponent="18.14" surfaceScale="1.03">
+                     <light>
+                        <Light.Distant color="#b568ad" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Sphere fx:id="tx_ball" layoutX="80.0" layoutY="490.0" radius="50">
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.05">
+                     <light>
+                        <Light.Distant azimuth="33.49" color="#141f9cca" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Sphere>
+            <Text fx:id="tx_UTM" fill="#d70000d6" fontSmoothingType="LCD" layoutX="431.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UTM" wrappingWidth="135.306640625">
+               <font>
+                  <Font size="63.0" />
+               </font>
+            </Text>
+            <Text fx:id="tx_Calc" fill="#0dda1e" fontSmoothingType="LCD" layoutX="30.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculatoare">
+               <font>
+                  <Font name="Microsoft Himalaya" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="tx_Info" fontSmoothingType="LCD" layoutX="431.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informatica">
+               <font>
+                  <Font name="Microsoft Himalaya" size="41.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.7111111111111111" centerY="0.6523809523809524" radius="0.5">
+                     <stops>
+                        <Stop color="#0fe11d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text fx:id="tx_MN" layoutX="36.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Microelectronica">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="41.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.8277777777777777" centerY="0.4095238095238095" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#f84c4c" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Button fx:id="btn_Start" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: #42f44b;" text="Start">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_Pause" layoutX="100.0" layoutY="13.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" style="-fx-background-color: #f47a41;" text="Pause">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>
